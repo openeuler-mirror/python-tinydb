@@ -1,11 +1,11 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-tinydb
-Version:	4.5.1
+Version:	4.7.0
 Release:	1
 Summary:	TinyDB is a tiny, document oriented database optimized for your happiness
 License:	MIT
 URL:		https://github.com/msiemens/tinydb
-Source0:	https://files.pythonhosted.org/packages/42/17/5c81cdaea6afd396cef72776b7e31c26bc1482086979f758dd25cb6a79f0/tinydb-4.5.1.tar.gz
+Source0:	https://files.pythonhosted.org/packages/77/b3/2ab727ab4062800731c2e4d773358c6c25f8d630affa3e3ccdb21dc40d68/tinydb-4.7.0.tar.gz
 BuildArch:	noarch
 
 Requires:	python3-typing-extensions
@@ -28,7 +28,7 @@ Provides:	python3-tinydb-doc
 TinyDB is a lightweight document oriented database optimized for your happiness
 
 %prep
-%autosetup -n tinydb-4.5.1
+%autosetup -n tinydb-4.7.0
 
 %build
 %py3_build
@@ -68,5 +68,8 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Thu Jul 07 hkgy <kaguyahatu@outlook.com> - 4.7.0-1
+- Upgrade version to 4.7.0
+
 * Wed Sep 22 2021 Python_Bot <Python_Bot@openeuler.org> - 4.5.1-1
 - Package Init
